@@ -1,0 +1,49 @@
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.me-auto{
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.me-auto a {
+    display: block;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around !important;
+}
+
+h2{
+    text-align: center;
+}
+
+h5{
+    text-align: center;
+}
+
+.container-card{
+    display: flex;
+    margin: 90px;
+    gap: 30px;
+}
+
+.body{
+    text-align: center;
+}
+
+h7{
+    display: flex;
+    margin: 1px;
+    gap: 30px;
+    
+}
+
+h10{
+    text-align: center;
+}

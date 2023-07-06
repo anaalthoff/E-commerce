@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 50vmin;
+}
+
+
+.App-segunda{
+  height: 70vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 3vmin);
+  color: black;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.App-palavra{
+  width: 103%;
+  height: 31%;
+  top: 100px;
+  padding: 0px 22px 0px 22px;
+}
+
+
