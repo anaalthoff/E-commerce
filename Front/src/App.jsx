@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import './App.css'
-import mac from "./public/mac.png"
+import mac from "./assets/mac.png"
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from './Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import marca from "./public/marca.png";
-import segunda from "./public/segunda.png";
-import palavra from "./public/palavra.png";
-import imagem from "./public/imagem.png";
+import marca from "./assets/marca.png";
+import segunda from "./assets/segunda.png";
+import palavra from "./assets/palavra.png";
+import imagem from "./assets/imagem.png";
 
 
 function App() {

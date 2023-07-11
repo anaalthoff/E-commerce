@@ -1,18 +1,18 @@
 
 import Navbar from './Navbar';
-import mac from './public/mac.png';
-import segunda from "./public/segunda.png";
+import mac from './assets/mac.png';
+import segunda from "./assets/segunda.png";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import air from './public/air.jpg';
-import airm2 from './public/airm2.jpg';
-import pro13 from './public/pro13.jpg';
-import pro14 from './public/pro14.jpg';
-import imac from './public/imac.jpg';
-import macmini from './public/macmini.jpg';
-import macstudio from './public/macstudio.jpg';
-import macpro from './public/macpro.jpg';
-import palavra from "./public/palavra.png";
+import air from './assets/air.jpg';
+import airm2 from './assets/airm2.jpg';
+import pro13 from './assets/pro13.jpg';
+import pro14 from './assets/pro14.jpg';
+import imac from './assets/imac.jpg';
+import macmini from './assets/macmini.jpg';
+import macstudio from './assets/macstudio.jpg';
+import macpro from './assets/macpro.jpg';
+import palavra from "./assets/palavra.png";
 
 
 

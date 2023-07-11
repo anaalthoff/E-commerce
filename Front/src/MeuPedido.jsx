@@ -1,10 +1,10 @@
 import React from 'react';
 import Navbar from './Navbar';
 import ListGroup from 'react-bootstrap/ListGroup';
-import airm2 from './public/airm2.jpg';
-import ultima from './public/ultima.png';
-import escrito from './public/escrito.png';
-import fotof from './public/fotof.png';
+import airm2 from './assets/airm2.jpg';
+import ultima from './assets/ultima.png';
+import escrito from './assets/escrito.png';
+import fotof from './assets/fotof.png';
 import Button from 'react-bootstrap/Button';
 
 function MeuPedido() {
