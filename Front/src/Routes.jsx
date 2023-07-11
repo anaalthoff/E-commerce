@@ -4,21 +4,18 @@ import Home from './Home';
 import Carrinho from './Carrinho';
 import MeuPedido from './MeuPedido';
 import App from './App';
+import { FormControlStatic } from "react-bootstrap";
 
 function Routes() {
 
 const router = createBrowserRouter([
     {
-      path: "*",
+      path: "/",
       element: <App />
     },
     {
       path: "/pagina",
       element: <Home />
-    },
-    {
-      path: "/app",
-      element: <App />
     },
     {
       path: "/carrinho",
