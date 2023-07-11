@@ -1,81 +1,39 @@
-a {
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 180px;
+}
+
+.links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: -70px;
+}
+
+.links-container a {
     color: white;
     text-decoration: none;
+    margin: 0 20px;
+
+    font-family:Arial, Helvetica, sans-serif ;
+    font-weight: thin;
+    font-size: 20px;
+    letter-spacing: 2px;
 }
 
+ion-icon {
+    color: white;
+    width: 45px;
+    height: 25px;
+}
 
-.me-auto{
-    width: 35%;
+.navbar {
     display: flex;
-    justify-content: space-around;
-}
-
-.me-auto a {
-    display: block;
-}
-
-.container {
-    display: flex;
-    justify-content: space-around !important;
-}
-
-h2{
-    text-align: center;
-}
-
-h5{
-    text-align: center;
-}
-
-.container-card{
-    display: flex;
-    margin: 90px;
-    gap: 30px;
-}
-
-.body{
-    text-align: center;
-}
-
-h7{
-    display: flex;
-    margin: 1px;
-    gap: 30px;
-    
-}
-
-h10{
-    text-align: center;
-}
-
-.airm2{
-    width: 10%;
-    justify-content: space-around;
-}
-
-
-.fotof-palavra{
-    width: 100%;
-    height: 30%;
-    top: 100px;
-    padding: 0px 20px 0px 20px;
-}
-
-.ultima-palavra{
-    width: 105%;
-    height: 50%;
-    top: 100px;
-    padding: 0px 55px 0px 55px;
-}
-
-.escrito-palavra{
-    width: 200;
-    height: 55%;
-    top: 105px;
-    padding: 0px 55px 0px 55px;
-}
-
-.grupo{
-    padding-right: 10px;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 }
