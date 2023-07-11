@@ -26,8 +26,9 @@ function Carrinho() {
 
   const buscarProdutos = async () => {
     try {
-      const response = await axios.get('/api/produtos');
+      const response = await api.get('/produto/buscar_produtos');
       setProdutos(response.data.produtos);
+      console.log(produtos)
     } catch (error) {
       console.error(error);
     }
@@ -49,18 +50,19 @@ function Carrinho() {
           {/* Cards do primeiro grupo */}
           {produtos.map((produto) => (
             <Card key={produto.id_produto}>
-              <Card.Img src={getImageByType(produto.tipo)} className="air-jpg" />
+              <Card.Img src={air} className="air-jpg" />
               <Card.Body className='body'>
                 <Card.Title >{produto.nome}</Card.Title>
                 <Card.Text>
-                  <span>{produto.descricao}</span>
+                  <span>{produto.tamanho} pol.</span>
+                  <span>{produto.cor}</span>
                   <span>R$ {produto.preco}</span>
                 </Card.Text>
                 <Button className='botao' variant="primary">Comprar</Button>
               </Card.Body>
             </Card>
           ))}
-          <Card>
+          {/* <Card>
             <Card.Img src={airm2} className="airm2-jpg" />
             <Card.Body className='body'>
               <Card.Title>MacBook Air</Card.Title>
@@ -99,9 +101,9 @@ function Carrinho() {
       </div>
 
       <div className='container-card'>
-        <div className='card-group'>
+        <div className='card-group'> */}
           {/* Cards do segundo grupo */}
-          <Card>
+          {/* <Card>
             <Card.Img src={imac} className="imac-jpg" />
             <Card.Body className='body'>
               <Card.Title >iMac</Card.Title>
@@ -147,7 +149,7 @@ function Carrinho() {
               </Card.Text>
               <Button className='botao' variant="primary">Comprar</Button>
             </Card.Body>
-          </Card>
+          </Card> */}
 
         </div>
       </div>

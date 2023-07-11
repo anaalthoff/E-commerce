@@ -1,9 +1,11 @@
 const express = require("express")
 const bodyParser = require('body-parser')
 const port = 3000
+const cors = require('cors');
 
 const app = express()
 app.use(bodyParser.json())
+app.use(cors());
 
 // Importando as rotas dos controllers
 const pedidoRoutes = require("./routes/pedido");
