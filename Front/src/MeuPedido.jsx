@@ -1,34 +1,66 @@
+import React from 'react';
 import Navbar from './Navbar';
-import { IonAvatar, IonItem, IonLabel, IonThumbnail } from '@ionic/react';
-import pro13 from './public/pro13.jpg';
+import ListGroup from 'react-bootstrap/ListGroup';
+import airm2 from './public/airm2.jpg';
+import ultima from './public/ultima.png';
+import escrito from './public/escrito.png';
+import fotof from './public/fotof.png';
+import Button from 'react-bootstrap/Button';
 
 function MeuPedido() {
 
-  return (
-    <>
-      
-      <Navbar/>
-     
-      <h2>Veja o que está na sua sacola</h2>
+  const App = () => {
+    const finalizar  = () => {
+      console.log('Botão clicado!');
+    };
 
-      <IonItem>
-        <IonAvatar slot="start">
-          <img src={mac} className="App-logo" alt="logo" />
-        </IonAvatar>
-        <IonLabel>Avatar Item</IonLabel>
-      </IonItem>
+    return (
+      <>
+        <Navbar/>
+        <h2>Veja o que está na sua sacola</h2>
 
-      <IonItem>
-        <IonThumbnail slot="start">
-          <img src={mac} className="App-logo" alt="logo" />
-        </IonThumbnail>
-        <IonLabel>Thumbnail Item</IonLabel>
-      </IonItem>
+        <ListGroup className='lista'>              
+          <ListGroup.Item className='grupo'>
+            <img src={airm2} className="airm2" />
+            MacBook Air
+            Chip M2
+            R$ 13.999
+          </ListGroup.Item>
+        </ListGroup>
 
+        <Button onClick={finalizar} type='text' style={{ width: '200px' }}>Finalizar</Button>
 
+        <img src={fotof} className="fotof-palavra" alt="logo" />
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+        </a>
 
-    </>
-  );
+        <img src={escrito} className="escrito-palavra" alt="logo" />
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+        </a>
 
+        <img src={ultima} className="utlima-palavra" alt="logo" />
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+        </a>
+      </>
+    );
+  }
+
+  return <App />;
 }
-export default MeuPedido
+
+export default MeuPedido;
