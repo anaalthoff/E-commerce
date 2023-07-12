@@ -1,19 +1,24 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from '../Views/Home';
-import Carrinho from '../Views/Carrinho';
+import Produtos from '../Views/Produtos';
 import Pedido from '../Views/Pedido';
-import App from '../app';
+// import Pages from '../Views/Pages';
+import App from '../App';
+import { CompraProvider } from '../context/compraProvider';
 
 function AppRoutes() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/carrinho" element={<Carrinho />} />
-        <Route path="/pedido" element={<Pedido />} />
-      </Routes>
+      <CompraProvider>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/produtos" element={<Produtos />} />
+          <Route path="/pedido" element={<Pedido />} />
+          {/* <Route path="/pages" element={<Pages />} /> */}
+        </Routes>
+      </CompraProvider>
     </BrowserRouter>
   );
 }

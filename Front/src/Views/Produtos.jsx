@@ -1,27 +1,31 @@
 import React, { useEffect, useState } from 'react';
-import Navbar from '../component/Navbar';
-import Footer from '../component/Footer';
-import '../style/carrinho.css'
-import api from '../../api';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-
+import Navbar from '../component/Navbar';
+import Footer from '../component/Footer';
+import '../style/produtos.css'
+import api from '../../api';
+import { useCompraContext } from '../hooks/useCompraContext';
 // Imagens
 import pcs from '../assets/pcs.jpg';
 import air from '../assets/air.jpg';
 
-function Carrinho() {
+function Produtos() {
+  // Desestruturação do objeto retornado pelo hook useCompraContext
+  const { adicionarItemAoCarrinho } = useCompraContext();
+  // criar um estado chamado produtos. O estado inicial é um array vazio []. A função setProdutos é usada para atualizar o estado.
+  console.log(adicionarItemAoCarrinho)
   const [produtos, setProdutos] = useState([]);
 
   useEffect(() => {
     buscarProdutos();
+    // A dependência [] vazia significa que o efeito só será executado uma vez, quando o componente for montado.
   }, []);
 
   const buscarProdutos = async () => {
     try {
       const response = await api.get('/produto/buscar_produtos');
       setProdutos(response.data.produtos);
-      console.log(produtos)
     } catch (error) {
       console.error(error);
     }
@@ -29,6 +33,11 @@ function Carrinho() {
 
   const produtosCima = produtos.slice(0, 4);
   const produtosBaixo = produtos.slice(4, 8);
+
+  const handleComprar = (produto) => {
+    adicionarItemAoCarrinho(produto);
+    localStorage.setItem('carrinho', JSON.stringify(produto));
+  };
 
   return (
     <>
@@ -55,7 +64,7 @@ function Carrinho() {
                   <span>{produto.cor}</span>
                   <span>R$ {produto.preco}</span>
                 </Card.Text>
-                <Button className='botao' variant="primary">Comprar</Button>
+                <Button className='botao' variant="primary" onClick={() => handleComprar(produto)}>Comprar</Button>
               </Card.Body>
             </Card>
           ))}
@@ -75,7 +84,7 @@ function Carrinho() {
                   <span>{produto.cor}</span>
                   <span>R$ {produto.preco}</span>
                 </Card.Text>
-                <Button className='botao' variant="primary">Comprar</Button>
+                <Button className='botao' variant="primary" onClick={() => handleComprar(produto)}>Comprar</Button>
               </Card.Body>
             </Card>
           ))}
@@ -87,28 +96,4 @@ function Carrinho() {
   );
 }
 
-// Função auxiliar para obter a imagem de acordo com o tipo de produto
-// const getImageByType = (tipo) => {
-//   switch (tipo) {
-//     case 'MacBook Air':
-//       return air;
-//     case 'MacBook Air M2':
-//       return airm2;
-//     case 'MacBook Pro 13':
-//       return pro13;
-//     case 'MacBook Pro 14':
-//       return pro14;
-//     case 'iMac':
-//       return imac;
-//     case 'Mac Mini':
-//       return macmini;
-//     case 'Mac Studio':
-//       return macstudio;
-//     case 'Mac Pro':
-//       return macpro;
-//     default:
-//       return '';
-//   }
-// }
-
-export default Carrinho;
+export default Produtos;

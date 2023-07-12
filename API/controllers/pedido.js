@@ -3,9 +3,9 @@ const model = require('../models/pedido')
 
 // CRIAR UM PEDIDO OK
 exports.criar_pedido = (req, res) => {
-    const { id_usuario, id_produto, valor_total } = req.body;
+    const { id_produto, valor_total } = req.body;
 
-    model.criar_pedido(id_usuario, id_produto, valor_total)
+    model.criar_pedido(id_produto, valor_total)
         .then(() => {
             res.status(200).send({ mensagem: 'Pedido criado com sucesso' });
         })

@@ -2,9 +2,9 @@
 const database = require('./../banco')
 
 // CRIAR UM PEDIDO OK
-exports.criar_pedido = (id_usuario, id_produto, valor_total) => {
-  const query = "INSERT INTO pedido (id_usuario, id_produto, valor_total) VALUES ($1, $2, $3)";
-  return database.query(query, [id_usuario, id_produto, valor_total]);
+exports.criar_pedido = (id_produto, valor_total) => {
+  const query = "INSERT INTO pedido (id_produto, valor_total) VALUES ($1, $2)";
+  return database.query(query, [id_produto, valor_total]);
 };
 
 // BUSCAR TODOS OS PEDIDOS OK

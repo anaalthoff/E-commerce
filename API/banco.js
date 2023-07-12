@@ -1,5 +1,5 @@
 const pg = require("pg")
-const banco = new pg.Client("postgres://heufdlwz:aRzIiQX5QHJ6_N0PPYbNzzCguRWss8cz@silly.db.elephantsql.com/heufdlwz")
+const banco = new pg.Client("")
 
 banco.connect((erro) => {
     if (erro) {

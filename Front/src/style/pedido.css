@@ -63,31 +63,39 @@ hr {
 
 .itens ion-icon {
     color: #0071E3;
-  }
+}
 
 ion-icon[name="trash-outline"] {
     color: #424245;
 }
 
-  .total-finalizar {
+.total-finalizar {
     display: flex;
     justify-content: center;
     gap: 8rem;
     margin: 3rem auto 4rem;
     width: 80%;
-/* margin-bottom: 3rem; */
-  }
+    /* margin-bottom: 3rem; */
+}
 
-  .total{
+.total {
     margin-left: 27rem;
-  }
+}
 
-  .finalizar {
+.finalizar {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-  }
-  
-  .finalizar h4 {
+}
+
+.finalizar h4 {
     margin: 0 0 20px 0;
+}
+
+.empty-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    padding: 0;
   }
