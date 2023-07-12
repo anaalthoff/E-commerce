@@ -19,7 +19,8 @@ function NavbarApp() {
       </div>
       <Link to="/produtos"><ion-icon name="search-outline"></ion-icon></Link>
       <Link to="/pedido"><ion-icon name="cart-outline"></ion-icon></Link>
-      <ion-icon name="person-outline"></ion-icon>
+      <Link to="/admin"><ion-icon name="person-outline"></ion-icon></Link>
+      
     </Navbar>
   );
 }
