@@ -8,7 +8,7 @@ Este é um projeto de E-commerce desenvolvido como parte de um estudo prático. 
 
 ---
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
 - Cadastro e autenticação de usuários
 - Catálogo de produtos com filtros e categorias
@@ -19,7 +19,7 @@ Este é um projeto de E-commerce desenvolvido como parte de um estudo prático. 
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **Back-end**:
   - Node.js
@@ -38,7 +38,7 @@ Este é um projeto de E-commerce desenvolvido como parte de um estudo prático. 
 
 ---
 
-## 📦 Como Rodar o Projeto
+## Como Rodar o Projeto
 
 ### 1. Clonar o Repositório
 
