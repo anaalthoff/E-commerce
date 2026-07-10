@@ -6,8 +6,6 @@ Este é um projeto de E-commerce desenvolvido como parte de um estudo prático. 
 - **Banco de Dados**: PostgreSQL
 - **Front-end**: React
 
----
-
 ## Funcionalidades
 
 - Cadastro e autenticação de usuários
@@ -16,8 +14,6 @@ Este é um projeto de E-commerce desenvolvido como parte de um estudo prático. 
 - Processo de checkout e pagamento simulado
 - Histórico de pedidos
 - Área administrativa para gerenciamento de produtos e usuários
-
----
 
 ## Tecnologias Utilizadas
 
@@ -35,8 +31,6 @@ Este é um projeto de E-commerce desenvolvido como parte de um estudo prático. 
 
 - **Banco de Dados**:
   - PostgreSQL
-
----
 
 ## Como Rodar o Projeto
 
